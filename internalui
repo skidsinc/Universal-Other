@@ -1,7 +1,7 @@
 repeat
 	task.wait(0.1)
 until game:IsLoaded()
-task.wait(0.5)
+task.wait(2)
 
 local FakeInternal = Instance.new("ScreenGui")
 	local Dim = Instance.new("Frame")
@@ -1672,7 +1672,7 @@ local FakeInternal = Instance.new("ScreenGui")
 				task.wait(0.1)
 			until shared.FakeInternal.Version ~= nil
 		
-			script.Parent.Version.Text = string.format("%s | made by zzerexx#3970", shared.FakeInternal.Version)
+			script.Parent.Version.Text = string.format("%s", shared.FakeInternal.Version)
 		end)
 	end
 	coroutine.wrap(CLAL_fake_script)()
