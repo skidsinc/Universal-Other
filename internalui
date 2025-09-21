@@ -1,4 +1,9 @@
-	local FakeInternal = Instance.new("ScreenGui")
+repeat
+	task.wait(0.1)
+until game:IsLoaded()
+task.wait(0.5)
+
+local FakeInternal = Instance.new("ScreenGui")
 	local Dim = Instance.new("Frame")
 	local Executor = Instance.new("CanvasGroup")
 	local UICorner = Instance.new("UICorner")
@@ -1981,3 +1986,6 @@
 		PersonalItems.Position = Right
 	end
 	coroutine.wrap(NYMIRF_fake_script)()
+queue_on_teleport([[
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/skidsinc/Universal-Other/refs/heads/main/internalui", true))()
+]])
