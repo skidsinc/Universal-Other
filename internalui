@@ -1222,7 +1222,6 @@ local FakeInternal = Instance.new("ScreenGui")
 		local ContextActionService = game:GetService("ContextActionService")
 		local TweenService = game:GetService("TweenService")
 		local Camera = workspace.CurrentCamera
-		local FieldOfView = Camera.FieldOfView
 		local ButtonHover = Color3.fromRGB(120, 120, 120)
 		local ButtonDown = Color3.fromRGB(170, 170, 170)
 		
@@ -1319,7 +1318,6 @@ local FakeInternal = Instance.new("ScreenGui")
 				end
 				local Transparency = UIState and 0 or 1
 				Tween(Dim, {BackgroundTransparency = UIState and 0.35 or 1})
-				Tween(Camera, {FieldOfView = UIState and FieldOfView - 10 or FieldOfView})
 				Tween(Blur, {Size = (UIState and 12 or 0)})
 				for _,v in next, Windows do
 					Tween(v, {GroupTransparency = Transparency})
