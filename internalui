@@ -1987,3 +1987,5 @@ local FakeInternal = Instance.new("ScreenGui")
 queue_on_teleport([[
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/skidsinc/Universal-Other/refs/heads/main/internalui", true))()
 ]])
+
+
