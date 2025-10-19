@@ -6,6 +6,6 @@ setfflag("DebugDefaultTargetWorldStepsPerFrame", "-2147483648")
 setfflag("PlayerHumanoidPropertyUpdateRestrict", "False")
 setfflag("WorldStepsOffsetAdjustRate", "-2147483648")
 setfflag("DebugSendDistInSteps", "-2147483648")
-setfflag("MaxMissedWorldStepsRemembered", "2147483648")
+setfflag("MaxMissedWorldStepsRemembered", "-2147483648")
 
 print("got to end")
