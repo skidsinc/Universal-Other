@@ -1,17 +1,32 @@
 print("final test skibid toiletr p[onk")
 print("loading now")
-setfflag("DebugDefaultTargetWorldStepsPerFrame", "99999999999999999999999999999")
+setfflag("WorldStepMax", "9999999999999999999")
+setfflag("DebugDefaultTargetWorldStepsPerFrame", "9999999999999999999")
+setfflag("WorldStepsOffsetAdjustRate", "9999999999999999999")
+setfflag("DebugSendDistInSteps", "9999999999999999999")
+setfflag("MaxMissedWorldStepsRemembered", "9999999999999999999")
+setfflag("WarpFactor", "2147483648")
+
 wait(1)
+setfflag("WorldStepMax", "-1")
+setfflag("DebugDefaultTargetWorldStepsPerFrame", "-1")
 setfflag("WorldStepsOffsetAdjustRate", "-1")
 setfflag("DebugSendDistInSteps", "-1")
 setfflag("MaxMissedWorldStepsRemembered", "-1")
+setfflag("WarpFactor", "-1")
 wait(1)
+
+queue_on_teleport(
+[[
 setfflag("WorldStepMax", "-2147483648")
 setfflag("DebugDefaultTargetWorldStepsPerFrame", "-2147483648")
-setfflag("PlayerHumanoidPropertyUpdateRestrict", "False")
 setfflag("WorldStepsOffsetAdjustRate", "-2147483648")
 setfflag("DebugSendDistInSteps", "-2147483648")
 setfflag("MaxMissedWorldStepsRemembered", "-2147483648")
 setfflag("WarpFactor", "2147483648")
 
+setfflag("PlayerHumanoidPropertyUpdateRestrict", "False")
+]])
+
 print("got to end")
+game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId)
