@@ -1,5 +1,5 @@
 setfflag("WorldStepMax", "-1")
-setfflag("DebugDefaultTargetWorldStepsPerFrame", "-1")
+setfflag("DebugDefaultTargetWorldStepsPerFrame", "999999999999999")
 setfflag("WorldStepsOffsetAdjustRate", "-1")
 setfflag("DebugSendDistInSteps", "-1")
 setfflag("MaxMissedWorldStepsRemembered", "-1")
