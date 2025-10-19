@@ -1,3 +1,4 @@
+print("yea this tuffd blud")
 setfflag("WorldStepMax", "-99999999999999")
 wait(1)
 setfflag("WorldStepMax", "-1")
