@@ -1,13 +1,3 @@
-print("final test skibid toiletr p[onk")
-print("loading now")
-setfflag("WorldStepMax", "9999999999999999999")
-setfflag("DebugDefaultTargetWorldStepsPerFrame", "9999999999999999999")
-setfflag("WorldStepsOffsetAdjustRate", "9999999999999999999")
-setfflag("DebugSendDistInSteps", "9999999999999999999")
-setfflag("MaxMissedWorldStepsRemembered", "9999999999999999999")
-setfflag("WarpFactor", "2147483648")
-
-wait(1)
 setfflag("WorldStepMax", "-1")
 setfflag("DebugDefaultTargetWorldStepsPerFrame", "-1")
 setfflag("WorldStepsOffsetAdjustRate", "-1")
@@ -27,6 +17,9 @@ setfflag("MaxMissedWorldStepsRemembered", "-2147483648")
 setfflag("WarpFactor", "2147483648")
 
 setfflag("PlayerHumanoidPropertyUpdateRestrict", "False")
+
+wait(1)
+setfflag("WarpFactor", "-2147483648")
 ]])
 
 print("got to end and lowk tryna rejoin")
