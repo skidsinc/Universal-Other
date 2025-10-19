@@ -29,5 +29,5 @@ setfflag("WarpFactor", "2147483648")
 setfflag("PlayerHumanoidPropertyUpdateRestrict", "False")
 ]])
 
-print("got to end")
+print("got to end and lowk tryna rejoin")
 game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId)
