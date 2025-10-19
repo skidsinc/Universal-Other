@@ -1,0 +1,3 @@
+setfflag("WorldStepMax", "-99999999999999")
+wait(3.5)
+setfflag("WorldStepMax", "-1")
